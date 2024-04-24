@@ -76,6 +76,11 @@ letter-spacing: 0.1em;
 /*	растояние между буквами*/
 color: #023047;
 }
+.menu li a:hover {
+	color: #ffd571;
+	font-size: 30px;
+	transition-duration: 0.6s;
+}
 
 .menu li {
 	margin-right: 40px;
