@@ -72,6 +72,7 @@ text-decoration: none;
 font-size:24px;
 letter-spacing: 0.1em;
 /*	растояние между буквами*/
+transition: 0.5s;
 color: #3c2946;
 
 }
@@ -115,7 +116,7 @@ display: flex;
 .footer{
 	height: 100px;
 	width:100%;
-	background-color:blue;
+	background-color:#3f4441;
 	margin-top: auto;
 
 }
@@ -139,4 +140,13 @@ display: flex;
 @media(max-width:480px){
 	
 }
-/*#ffd571 #bbd196 #56556e  #3c2946*/
+/*#3f4441#5e6f64#ba7967#ffdecf*/
+
+
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 60px 0;
+}
+
