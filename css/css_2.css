@@ -39,7 +39,7 @@ scroll-snap-align: start;
 
 .header {
 	width: 100%;
-	height: 100vh;
+	height: 120vh;
 	background-color: #ffdecf;
 	background-size: cover;
 	display: flex;
