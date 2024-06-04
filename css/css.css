@@ -29,7 +29,7 @@ section{
 	/*отступ*/
 	width: 100%;
 	height: 100vh;
-	background-color:gray;
+	background-color:#ffdecf;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,7 +38,7 @@ scroll-snap-align: start;
 
 .header {
 	width: 100%;
-	height: 120vh;
+	height: 100vh;
 	background: url('../img/back1.jpg') no-repeat center;
 	background-size: cover;
 	display: flex;
@@ -85,7 +85,9 @@ color: #3c2946;
 	margin-right: 40px;
 /*	пробелы между li*/
 }
-
+#menushka{
+	color: #ba7967;
+}
 .tel {
 	font-size: 24px;
 	text-decoration: none;
@@ -105,11 +107,23 @@ display: flex;
 	display: flex;
 	justify-content: space-around;
 }
-h3{
+.section-title{
+	font-size: 50px;
+	text-transform:uppercase;
+    color: #5e6f64;
+}
+
+
+.take{
 	font-family: "Anton", sans-serif;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #5e6f64;
+	margin-bottom: 30px;
 }
 .carousel {
- 
+	border: 15px solid #ba7967;
+	border-radius: 10px;
   width: 700px;
 }
 .carousel-inner img {
@@ -117,7 +131,25 @@ h3{
   margin: 0 auto;
 }
 
-
+.button {
+	width: 130px;
+  height: 130px;
+  font-size: 30px;
+	margin-top: 50px;
+	background-color: #ba7967;
+	color: #ffffff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+  transform: scale(1);
+  }
+  
+  .button:hover {
+	background-color: #5e6f64;
+	transform: scale(1.2);
+  }
 
 .footer{
 	height: 100px;
@@ -127,26 +159,8 @@ h3{
 
 }
 
-@media(max-width:1200px){
-.aboutBigMenu{
-	width: 1000px;
-	grid-template-columns: 1fr 280px;
-}
-}
 
-@media(max-width:768px){
-	.aboutBigMenu{
-		width: 480px;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-
-	}
-}
-
-@media(max-width:480px){
-	
-}
-/*#3f4441#5e6f64#ba7967#ffdecf*/
+/*#3f4441 #5e6f64 #ba7967 #ffdecf*/
 
 
 
