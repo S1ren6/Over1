@@ -72,11 +72,11 @@ font-size:24px;
 letter-spacing: 0.1em;
 /*	растояние между буквами*/
 transition: 0.5s;
-color: #3c2946;
+color: #3f4441;
 
 }
 .menu li a:hover {
-	color: #ffd571 ;
+	color: #5e6f64 ;
 	font-size: 30px;
 	transition-duration: 0.6s;
 }
@@ -91,9 +91,15 @@ color: #3c2946;
 .tel {
 	font-size: 24px;
 	text-decoration: none;
-	
+	font-family: "Noto Sans SC", sans-serif;
 	letter-spacing: 0.1em;
-	color: #3c2946;
+	text-transform: uppercase;
+	color: #3f4441;
+	transition: 0.5s;
+}
+.tel:hover {
+	transition-duration: 0.7s;
+	font-size: 28px;
 }
 .Tm1{
 	height: 30px;
@@ -122,7 +128,7 @@ display: flex;
 	margin-bottom: 30px;
 }
 .carousel {
-	border: 15px solid #ba7967;
+	border: 8px dashed #ba7967 ;
 	border-radius: 10px;
   width: 700px;
 }

@@ -2,7 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 /*	убрать края фотки.обнулить отступ*/
-font-family: "Anton", sans-serif;
+font-family: "Noto Sans SC", sans-serif;
 font-weight: 400;
 /*text-transform: uppercase; ШРИФТ И ТАК КАПСОМ*/
 color: black;
@@ -93,11 +93,15 @@ transition: 0.5s;
 .tel {
 	font-size: 24px;
 	text-decoration: none;
-	font-family: "Anton", sans-serif;
+	font-family: "Noto Sans SC", sans-serif;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	color: #3c2946;
+	color: #3f4441;
+	transition: 0.5s;
+}
+.tel:hover {
+	transition-duration: 0.7s;
+	font-size: 28px;
 }
 .Tm1{
 	height: 30px;
@@ -135,6 +139,9 @@ display: flex;
 .section-title {
   text-align: center;
   margin-bottom: 40px;
+color: #5e6f64;
+font-size: 30px;
+letter-spacing: 0.4em;
 }
 
 .products-grid {
@@ -147,7 +154,7 @@ display: flex;
 .product-card {
   text-align: center;
   padding: 20px;
-  border: 5px solid #ba7967;
+  border: 5px dashed #ba7967;
   background-color: #ebecf1;
 }
 
