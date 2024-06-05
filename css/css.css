@@ -58,12 +58,15 @@ scroll-snap-align: start;
 }
 
 .menu{
+	width: 500px;
+	height: 30px;
 	display: flex; 
-	justify-content: space-around;
+	justify-content: space-evenly;
 /*в ряд*/
 }
 
 .menu li a{
+	width: 150px;
 	text-transform:uppercase;
 /*	все капс*/
 text-decoration: none;
@@ -71,24 +74,32 @@ text-decoration: none;
 font-size:24px;
 letter-spacing: 0.1em;
 /*	растояние между буквами*/
-transition: 0.5s;
+transition: 0.4s;
+  transform: scale(1);
+  transform-origin: center;
 color: #3f4441;
 
 }
 .menu li a:hover {
 	color: #5e6f64 ;
 	font-size: 30px;
-	transition-duration: 0.6s;
+	transform: scale(1.2);
 }
 
 .menu li {
-	margin-right: 40px;
-/*	пробелы между li*/
+	text-align: center;
+	width: 150px;
 }
 #menushka{
 	color: #ba7967;
 }
+.telle{
+	display: flex;
+	justify-content: center;
+	width: 400px;
+}
 .tel {
+	
 	font-size: 24px;
 	text-decoration: none;
 	font-family: "Noto Sans SC", sans-serif;
@@ -96,12 +107,14 @@ color: #3f4441;
 	text-transform: uppercase;
 	color: #3f4441;
 	transition: 0.5s;
+	transform-origin: center;
 }
 .tel:hover {
 	transition-duration: 0.7s;
 	font-size: 28px;
 }
 .Tm1{
+	width: 500px;
 	height: 30px;
 display: flex;
 	flex-direction: row;

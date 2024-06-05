@@ -59,12 +59,15 @@ scroll-snap-align: start;
 }
 
 .menu{
+	width: 500px;
+	height: 30px;
 	display: flex; 
-	justify-content: space-around;
+	justify-content: space-evenly;
 /*в ряд*/
 }
 
 .menu li a{
+	width: 150px;
 	text-transform:uppercase;
 /*	все капс*/
 text-decoration: none;
@@ -72,25 +75,33 @@ text-decoration: none;
 font-size:24px;
 letter-spacing: 0.1em;
 /*	растояние между буквами*/
+transition: 0.4s;
+  transform: scale(1);
+  transform-origin: center;
 color: #3f4441;
-/*поменять быстый уход*/
-transition: 0.5s;
+
 }
 
 .menu li a:hover {
 	color: #5e6f64;
 	font-size: 30px;
-	transition-duration: 0.6s;
+	transform: scale(1.2);
 }
 
 .menu li {
-	margin-right: 40px;
-/*	пробелы между li*/
+	text-align: center;
+	width: 150px;
 }
 #tovari{
 	color:#ba7967 ;
 }
+.telle{
+	display: flex;
+	justify-content: center;
+	width: 400px;
+}
 .tel {
+	width: 300px;
 	font-size: 24px;
 	text-decoration: none;
 	font-family: "Noto Sans SC", sans-serif;
@@ -98,12 +109,15 @@ transition: 0.5s;
 	text-transform: uppercase;
 	color: #3f4441;
 	transition: 0.5s;
+	transform-origin: center;
+
 }
 .tel:hover {
 	transition-duration: 0.7s;
 	font-size: 28px;
 }
 .Tm1{
+	width: 400px;
 	height: 30px;
 display: flex;
 	flex-direction: row;
@@ -149,6 +163,8 @@ letter-spacing: 0.4em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
+  grid-auto-flow: row;
+  
 }
 
 .product-card {
@@ -180,3 +196,23 @@ cursor: pointer;
 .product-price {
   font-weight: bold;
 }
+
+@media (max-width: 1200px) {
+	.products-grid {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+  }
+  
+  
+  @media (max-width: 900px) {
+	.products-grid {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  
+  @media (max-width: 600px) {
+	.products-grid {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+  }
